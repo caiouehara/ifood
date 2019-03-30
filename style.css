@@ -94,9 +94,22 @@ section div{
     border-radius: 10px;
 }
 #informativo{
-    background-image:url(images/bg.jpg);
-    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 100px;
+    
+
+    background-color: aliceblue;
     grid-area: div;
+}
+#informativo div:nth-child(1){
+    background-color: gray;
+}
+#informativo div:nth-child(2) img{
+    height: 290px;
+    width: 520px;
+
+    margin-left: 530px;
 }
 article{
     display: flex;

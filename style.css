@@ -4,11 +4,11 @@ body{
     grid-template-areas:'nav nav nav nav nav nav'
                         'header header header header header header'
                         'section section section section section section'
-                        'div div div div div div'
+                        'inf inf inf inf inf inf'
                         'div2 div2 div2 div2 div2 div2'
                         'aside aside aside aside aside aside'
                         'footer footer footer footer footer footer';
-    grid-template-rows: 35vh 80vh 60vh 80vh 35vh 150vh 30vh;
+    grid-template-rows: 35vh 80vh 60vh 60vh 35vh 150vh 30vh;
     grid-template-columns: auto;
     grid-gap: 5px;
 }
@@ -96,20 +96,37 @@ section div{
 #informativo{
     display: flex;
     align-items: center;
-    padding: 0px 0px 0px 100px;
-    
+    justify-content: space-between;
+    padding: 0px 150px 0px 185px;
+    margin: 0;
 
-    background-color: aliceblue;
-    grid-area: div;
+    background-color: #107c10;
+    grid-area: inf;
 }
 #informativo div:nth-child(1){
-    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    /* background-color: gray;  */
+    height: 300px;
+    width: 550px;
+}
+#informativo div:nth-child(1) h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30pt;
+    margin: 0;
+    color: white;
+}
+#informativo div:nth-child(1) p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10pt;
+    color: white;
 }
 #informativo div:nth-child(2) img{
     height: 290px;
     width: 520px;
-
-    margin-left: 530px;
 }
 article{
     display: flex;

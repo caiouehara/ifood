@@ -1,21 +1,22 @@
 body{
     margin: 0;
     display: grid;  
-    grid-template-areas:'nav nav nav nav nav nav'
+    grid-template-areas:
+                        'nav nav nav nav nav nav'
                         'header header header header header header'
                         'section section section section section section'
                         'inf inf inf inf inf inf'
                         'div2 div2 div2 div2 div2 div2'
                         'aside aside aside aside aside aside'
                         'footer footer footer footer footer footer';
-    grid-template-rows: 35vh 80vh 60vh 60vh 35vh 150vh 30vh;
+    grid-template-rows: 35vh 75vh 50vh 60vh 35vh 150vh 30vh;
     grid-template-columns: auto;
     grid-gap: none;
-}
-#bg{
-    /* background-image: url(images/wallpaper.jpg); */
-    background: cover;
-}
+    
+    background-image: url(images/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-color: #1d2b34;
+} 
 nav{
     display: flex;
     align-items: center;
@@ -26,7 +27,6 @@ nav{
     /* background-color: rgba(0, 0, 0, 0.247); */
 }
 nav img{
-    
     height: 300px;
     width: 300px;
 }
@@ -46,8 +46,6 @@ header{
     justify-content: center;
     /* eixo x */
     grid-area: header;
-    /* background-image: url(images/wallpaper.jpg); */
-    background-size: cover;
     /* colocar opacidade no bg sem colocar nos filhos */
     /* background-color: aqua; */
 }
@@ -63,6 +61,9 @@ header div{
     width: 700px;
     /* background-color: white; */
 }
+header div{
+    margin: 0;
+}
 header div h1{
     font-size: 50pt;
     color: rgba(252, 247, 247, 0.945);
@@ -73,6 +74,7 @@ header div h2{
     left: 100px;
     margin: 4px 0px 30px 0px;
     font-size: 30pt;
+    color: white;
 }
 header button{
     height: 9vh;
@@ -97,14 +99,15 @@ header button:hover{
     padding-left: 2px;
     transform: translateY(1px);
 }
-header img:nth-child(1){
-    padding: 350px 20px 30px 0px;
+header a:nth-child(1) img{
+    padding: 350px 0px 30px 0px;
+    margin: 0;
     height: 135px;
-    width: 400px;
+    width: 380px;
 }
-header img:nth-child(3){
-    margin-bottom: 100px;
-    margin-top: 50px;
+header a:nth-child(3) img{
+    opacity: 0.8;
+    margin-bottom: 200px;
     height: 400px;
     width: auto;
 }

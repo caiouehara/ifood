@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    display: grid;
+    display: grid;  
     grid-template-areas:'nav nav nav nav nav nav'
                         'header header header header header header'
                         'section section section section section section'
@@ -8,7 +8,7 @@ body{
                         'div2 div2 div2 div2 div2 div2'
                         'aside aside aside aside aside aside'
                         'footer footer footer footer footer footer';
-    grid-template-rows: 35vh 80vh 60vh 150vh 50vh 150vh 30vh;
+    grid-template-rows: 35vh 80vh 60vh 80vh 35vh 150vh 30vh;
     grid-template-columns: auto;
     grid-gap: 5px;
 }
@@ -94,13 +94,55 @@ section div{
     border-radius: 10px;
 }
 #informativo{
-    background-color: darkgreen;
+    background-image:url(images/bg.jpg);
+    background-size: cover;
     grid-area: div;
 }
 article{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     grid-area: div2;
+    padding: 0px 0px 0px 10px;
+    margin: 0px;
     
-    background-color: darkorange;
+    background-color: #0b080b;
+}
+article div img{
+    padding-left: 90px;
+    height: 220px;
+    width: 475px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+article div img:hover{
+    padding-left: 100px;
+    height: 220px;
+    width: 490px;
+    opacity: 1;
+    transition: 2s;
+}
+article div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-right: 50px;
+    /* background-color: aqua */
+}
+article h3{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-bottom: 0px;
+    font-size: 30pt;
+}
+article div:nth-child(2) p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10pt;
+    margin-top: 0px;
+    padding-left: 40px;
 }
 aside{
     grid-area: aside;

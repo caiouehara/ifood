@@ -8,7 +8,7 @@ body{
                         'div2 div2 div2 div2 div2 div2'
                         'aside aside aside aside aside aside'
                         'footer footer footer footer footer footer';
-    grid-template-rows: 35vh 75vh 100vh 150vh 50vh 150vh 30vh;
+    grid-template-rows: 35vh 80vh 60vh 150vh 50vh 150vh 30vh;
     grid-template-columns: auto;
     grid-gap: 5px;
 }
@@ -80,10 +80,20 @@ header img:nth-child(3){
     width: auto;
 }
 section{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
     grid-area: section;
+    padding: 4px 80px 4px 280px;
     background-color: brown;
 }
-.informativo {
+section div{
+    background-color: white;    
+    height: 290px;
+    width: 380px; 
+    border-radius: 10px;
+}
+#informativo{
     background-color: darkgreen;
     grid-area: div;
 }

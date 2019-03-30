@@ -8,7 +8,7 @@ body{
                         'div2 div2 div2 div2 div2 div2'
                         'aside aside aside aside aside aside'
                         'footer footer footer footer footer footer';
-    grid-template-rows: 35vh 150vh 100vh 150vh 50vh 150vh 30vh;
+    grid-template-rows: 35vh 75vh 100vh 150vh 50vh 150vh 30vh;
     grid-template-columns: auto;
     grid-gap: 5px;
 
@@ -19,27 +19,58 @@ nav{
     justify-content: space-around;
     grid-area: nav;
 
-    padding: 0px 0px 0px 70vh;
+    padding: 0px 0px 0px 80vh;
 
     background-color: red;
 }
 nav img{
-    height: 100px;
-    width: 100px
+    
+    height: 300px;
+    width: 300px;
 }
 nav div{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 
-    height: auto;
-    width: 100px;
+    height: 75px;
+    width: 350px;
+    /* background-color: black; */
     
 }
 header{
+    display: flex;
+    align-items: center;
+    /* eixo y */
+    justify-content: center;
+    /* eixo x */
     grid-area: header;
 
     background-color: aqua;
+}
+header div{
+    display: flex;
+    align-content: center;
+    /* eixo x */
+    justify-content: center;
+    /* eixo y */
+    flex-direction: column;
+
+    height: 300px;
+    width: 700px;
+    background-color: white;
+
+}
+header div h1{
+    font-size: 50pt;
+    margin-bottom: 0;
+}
+header div h2{
+    position: relative;
+    left: 100px;
+    margin: 4px;
+    
+    font-size: 30pt;
 }
 section{
     grid-area: section;

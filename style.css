@@ -44,13 +44,19 @@ nav div h2{
 }
 nav div button{
     background-color: #4CAF50; 
+    border-radius: 1px;
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
+    cursor: pointer;
+}
+nav div button:hover{   
+    background-color: rgba(235, 222, 222, 0.856); 
+    color: black;
+    transition: 2s;
 }
 header{
     display: flex;
@@ -98,7 +104,7 @@ header button{
     color: #350735fa;
     cursor: pointer;
     border-radius: 12px;
-    border-bottom-style: groove;
+    border-bottom-style: none;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     opacity: 0.7;
 }
@@ -121,6 +127,8 @@ header a:nth-child(3) img{
     margin-bottom: 200px;
     height: 400px;
     width: auto;
+    display: none;
+    /* imagem xbox live */
 }
 section{
     display: flex;

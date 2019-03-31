@@ -9,7 +9,7 @@ body{
                         'div2 div2 div2 div2 div2 div2'
                         'aside aside aside aside aside aside'
                         'footer footer footer footer footer footer';
-    grid-template-rows: 35vh 60vh 50vh 60vh 35vh 150vh 30vh;
+    grid-template-rows: 35vh 60vh 50vh 60vh 35vh 100vh 30vh;
     grid-template-columns: auto;
     grid-gap: none;
     
@@ -237,6 +237,25 @@ aside{
     grid-area: aside;
     
     background-color: red;
+}
+.maindiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: white;
+    height: 50%;
+    width: 100%;
+    margin: 0;
+}
+.coluna{
+    background-color: black;
+
+    width: 20%;
+    height: 1vh;
+}
+#maindiv2{
+    height: 35%;
 }
 footer{
     grid-area: footer;

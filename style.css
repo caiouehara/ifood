@@ -9,7 +9,7 @@ body{
                         'div2 div2 div2 div2 div2 div2'
                         'aside aside aside aside aside aside'
                         'footer footer footer footer footer footer';
-    grid-template-rows: 35vh 75vh 50vh 60vh 35vh 150vh 30vh;
+    grid-template-rows: 35vh 60vh 50vh 60vh 35vh 150vh 30vh;
     grid-template-columns: auto;
     grid-gap: none;
     
@@ -23,8 +23,6 @@ nav{
     justify-content: space-around;
     grid-area: nav;
     padding: 0px 0px 0px 80vh;
-
-    /* background-color: rgba(0, 0, 0, 0.247); */
 }
 nav img{
     height: 300px;
@@ -36,8 +34,23 @@ nav div{
     justify-content: space-around;
 
     height: 75px;
-    width: 350px;
-    /* background-color: black; */
+    width: 300px;
+}
+nav div h2{
+    font-size: 15pt;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    text-align: center;
+}
+nav div button{
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 header{
     display: flex;
@@ -46,8 +59,6 @@ header{
     justify-content: center;
     /* eixo x */
     grid-area: header;
-    /* colocar opacidade no bg sem colocar nos filhos */
-    /* background-color: aqua; */
 }
 header div{
     display: flex;
@@ -123,13 +134,15 @@ section{
     border-width: 1px;
     border-left-style: none;
     border-right-style:none;
-    background-color: brown;
+    border-top-style: none;
+    /* background-color: brown; */
 }
 section div{
-    background-color: white;    
+    background-color: rgb(189, 174, 174);    
     height: 290px;
     width: 380px; 
-    border-radius: 10px;
+    border-radius: 12px;
+    
 }
 #informativo{
     display: flex;

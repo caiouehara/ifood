@@ -235,20 +235,21 @@ article div:nth-child(2) p{
 }
 aside{
     grid-area: aside;
-    background-color: white;
+    background-color: #0b080b;
     margin: 0;
 }
 aside h3{
     font-size: 28pt;
     margin: 0;
     padding: 30px 0 0 100px;
+    color: white;
 }
 aside h4{
     font-size: 28pt;
     margin-top: 0;
     margin-bottom: 40px;
     padding: 0 0 0 100px;
-
+    color: white;
 }
 .separador{
     display: none;
@@ -262,7 +263,7 @@ aside h4{
     align-items: center;
     justify-content: space-around;
 
-    background-color: white;
+    background-color: #0b080b;
     height: 30%;
     width: 100%;
     margin: 0;
@@ -278,7 +279,7 @@ aside h4{
 
     font-size: 18pt;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: black;
+    color: rgb(255, 249, 249);
 }
 .coluna ul{
     margin: 0;

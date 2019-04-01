@@ -27,6 +27,7 @@ nav{
 nav img{
     height: 300px;
     width: 300px;
+    opacity: 0.8;
 }
 nav div{
     display: flex;
@@ -40,7 +41,9 @@ nav div h2{
     font-size: 15pt;
     font-family: 'Oswald', sans-serif;
     text-decoration: none;
+    /* tirar link não ta indo */
     text-align: center;
+    color: rgb(175, 194, 175);
 }
 nav div button{
     background-color: #4CAF50; 
@@ -83,7 +86,7 @@ header div{
 }
 header div h1{
     font-size: 50pt;
-    color: rgba(252, 247, 247, 0.945);
+    color: rgba(236, 222, 222, 0.938);
     margin-bottom: 0;
 }
 header div h2{
@@ -91,7 +94,7 @@ header div h2{
     left: 100px;
     margin: 4px 0px 30px 0px;
     font-size: 30pt;
-    color: white;
+    color: rgba(236, 222, 222, 0.8);
 }
 header button{
     height: 9vh;
@@ -106,21 +109,24 @@ header button{
     border-radius: 12px;
     border-bottom-style: none;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    opacity: 0.7;
+    opacity: 0.9;
 }
 header button:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     height: 10vh;
     width: 20vw;
     transition: 1s;
     padding-left: 2px;
     transform: translateY(1px);
+    color: white;
+    background-color: black;
 }
 header a:nth-child(1) img{
     padding: 350px 0px 30px 0px;
     margin: 0;
     height: 135px;
     width: 380px;
+    opacity: 0.7;
+    /* imagem da mibr */
 }
 header a:nth-child(3) img{
     opacity: 0.8;
@@ -145,12 +151,35 @@ section{
     border-top-style: none;
     /* background-color: brown; */
 }
+.separador{
+    /* classe com as configs de um separador */
+    position: relative;
+    top: 60px;
+    right: 25px;
+    background-color: black;
+    height: 2px;
+    width: 10vw;
+    margin: 0;
+    padding: 0;
+}
 section div{
+    display: flex;
+    justify-content: center;
+
     background-color: rgb(189, 174, 174);    
     height: 290px;
     width: 380px; 
     border-radius: 12px;
-    
+}
+section div h2{
+    position: relative;
+    left: 160px;
+    height: 40px;
+    width: auto;
+}
+section p{
+    position: relative;
+    top: 100px;
 }
 #informativo{
     display: flex;
@@ -250,13 +279,6 @@ aside h4{
     margin-bottom: 40px;
     padding: 0 0 0 100px;
     color: white;
-}
-.separador{
-    display: none;
-    background-color: black;
-    height: 1vh;
-    width: 90%;
-    padding-left: 40px;
 }
 .maindiv{
     display: flex;

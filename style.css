@@ -9,7 +9,7 @@ body{
                         'div2 div2 div2 div2 div2 div2'
                         'aside aside aside aside aside aside'
                         'footer footer footer footer footer footer';
-    grid-template-rows: 35vh 60vh 50vh 60vh 35vh 100vh 30vh;
+    grid-template-rows: 35vh 60vh 50vh 60vh 35vh 200vh 30vh;
     grid-template-columns: auto;
     grid-gap: none;
     
@@ -123,8 +123,7 @@ header button:hover{
     background-color: black;
 }
 header a:nth-child(1) img{
-    padding: 350px 0px 30px 0px;
-    margin: 0;
+    margin: 350px 0px 30px 0px;
     height: 135px;
     width: 380px;
     opacity: 0.7;
@@ -272,6 +271,7 @@ article div:nth-child(2){
 .logos img{
     width: 50px;
     height: 50px;
+    border-radius: 24px;
 }
 article h3{
     font-family: 'Poppins', sans-serif;
@@ -288,21 +288,19 @@ article div:nth-child(2) p{
 }
 aside{
     grid-area: aside;
-    background-color: #0b080b;
+    /* background-color: #0b080b; */
+    background-color: white;
     margin: 0;
+}
+.titulo{
+    background-color: green;
+    margin-top: 0;
 }
 aside h3{
     font-size: 28pt;
-    padding: 30px 0 0 100px;
-    margin-top: 0px;
-    color: white;
-}
-aside h4{
-    font-size: 28pt;
-    margin-top: 0;
-    margin-bottom: 50px;
     padding: 0px 0 0 100px;
     color: white;
+    margin: 0;
 }
 .maindiv{
     display: flex;
@@ -310,9 +308,17 @@ aside h4{
     justify-content: space-around;
 
     background-color: #0b080b;
-    height: 30%;
     width: 100%;
     margin: 0;
+}
+#maindiv{
+    height: 20%;
+}
+#maindiv2{
+    height: 50%;
+}
+#maindiv3{
+    height: 30%;
 }
 .coluna{
     display: flex;
@@ -339,9 +345,6 @@ aside h4{
 .coluna p:nth-child(4){
     margin-top: 0px;
     margin-bottom: 40px;
-}
-#maindiv2{
-    height: 35%;
 }
 footer{
     display: flex;

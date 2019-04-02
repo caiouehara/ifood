@@ -13,9 +13,12 @@ body{
     grid-template-columns: auto;
     grid-gap: none;
     
-    background-image: url(images/wallpaper.jpg);
+    background-image: url(images/bg3.jpg); 
+    background-position-x: 0px;
+    background-position-y: 0px;
     background-repeat: no-repeat;
-    background-color: #1d2b34;
+    background-color: #0b080b;
+    background-size: auto 140vh;
 } 
 nav{
     display: flex;
@@ -23,6 +26,7 @@ nav{
     justify-content: space-around;
     grid-area: nav;
     padding: 0px 0px 0px 80vh;
+    margin: 0 4vw 5vh 0;
 }
 nav img{
     height: 300px;
@@ -70,6 +74,7 @@ header{
     justify-content: center;
     /* eixo x */
     grid-area: header;
+    margin: 5vh 0 0 0;
 }
 header div{
     display: flex;
@@ -134,7 +139,7 @@ header a:nth-child(3) img{
     margin-bottom: 200px;
     height: 400px;
     width: auto;
-    display: none;
+    display: block;
     /* imagem xbox live */
 }
 section{
@@ -142,15 +147,7 @@ section{
     align-items: center;
     justify-content:space-around;
     grid-area: section;
-    padding: 4px 80px 4px 280px;
-
-    border-style: dotted;
-    border-color: white;
-    border-width: 1px;
-    border-left-style: none;
-    border-right-style:none;
-    border-top-style: none;
-    /* background-color: brown; */
+    margin: 4px 80px 4px 180px;
 }
 .separador{
     /* classe com as configs de um separador */
@@ -200,7 +197,8 @@ section p{
     padding: 0px 150px 0px 185px;
     margin: 0;
 
-    background-color: #107c10;
+    /* background-color: #107c10; */
+    background-color: #0b080b;
     grid-area: inf;
 }
 #informativo div:nth-child(1){

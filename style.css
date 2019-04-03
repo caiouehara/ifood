@@ -386,3 +386,78 @@ footer div h3{
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
+
+@media (max-width: 992px) {
+    body{
+        grid-template-rows:35vh 60vh 50vh 60vh 35vh 200vh 30vh;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+        'nav nav nav nav nav nav'
+        'header header header section section section'
+        '. . . . . .'
+        'inf inf inf inf inf inf'
+        'div2 div2 div2 div2 div2 div2'
+        'aside aside aside aside aside aside'
+        'footer footer footer footer footer footer';
+        background-image: url(images/bg4.jpg); 
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 0px;
+        width: 100%;
+    }
+    header{
+        flex-direction: column;
+    }
+    header div{
+        margin: 0;
+        width: 100%;
+        align-items: center;
+    }
+    header a:nth-child(1) img{
+        margin: 0;
+        height: 100px;
+        width: auto;
+        opacity: 1;
+        margin: 100px 300px 0 0;
+    }
+    header a:nth-child(3) img{
+        margin: 0;
+        height: 100px;
+        width: 100px;
+        display: none;
+    }
+    header div h1{
+        font-size: 28pt;
+        margin: 0;
+    }
+    header div h2{
+        font-size: 20pt;
+        margin: 0;
+        position: static;
+    }
+    header button{  
+        margin-left: 0;
+    }
+    section{
+        flex-direction: column;
+        opacity: 0.5;
+    }
+    section div{
+        margin: 0px;
+    }
+}
+
+
+@media (max-width: 768px) { 
+
+}
+
+
+@media (max-width: 576px) { 
+
+
+ }
+
+
